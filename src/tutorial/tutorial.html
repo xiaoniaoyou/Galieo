@@ -1,0 +1,914 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>tutorial</title><meta name="description" content="tutorial"><meta name="viewport" content="width=device-width, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no, email=no"><meta http-equiv="cleartype" content="on"><meta name="renderer" content="webkit"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><style>body {
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  color: #333;
+  background-color: #fff
+}
+
+.previewer h1,
+.previewer h2,
+.previewer h3,
+.previewer h4,
+.previewer h5,
+.previewer h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility
+}
+.previewer h1 small,
+.previewer h2 small,
+.previewer h3 small,
+.previewer h4 small,
+.previewer h5 small,
+.previewer h6 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #999
+}
+.previewer h1,
+.previewer h2,
+.previewer h3 {
+  line-height: 40px
+}
+.previewer h1 {
+  margin: 50px 0 20px;
+  font-size: 30px;
+  color: #0077bb;
+}
+.previewer h2 {
+  margin: 35px 0 20px;
+  font-size: 26px
+}
+.previewer h3 {
+  margin: 20px 0;
+  font-size: 21px
+}
+.previewer h4 {
+  font-size: 18px
+}
+.previewer h5,
+.previewer h6 {
+  font-size: 16px
+}
+
+.previewer h1 small {
+  font-size: 24.5px
+}
+.previewer h2 small {
+  font-size: 17.5px
+}
+.previewer h3 small {
+  font-size: 14px
+}
+.previewer h4 small {
+  font-size: 14px
+}
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1
+}
+
+audio:not([controls]) {
+  display: none
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px
+}
+
+a:hover,
+a:active {
+  outline: 0
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline
+}
+
+sup {
+  top: -.5em
+}
+
+sub {
+  bottom: -.25em
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic
+}
+
+#map_canvas img,
+.google-maps img {
+  max-width: none
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle
+}
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button
+}
+
+label,
+select,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+input[type=radio],
+input[type=checkbox] {
+  cursor: pointer
+}
+
+input[type=search] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0
+}
+
+li {
+  line-height: 27px
+}
+
+
+dl {
+  margin-bottom: 20px
+}
+
+dt,
+dd {
+  line-height: 20px
+}
+
+dt {
+  font-weight: 700
+}
+
+dd {
+  margin-left: 10px
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #cfcfcf;
+  margin: 30px 0;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999
+}
+
+
+blockquote {
+  padding: 10px 15px;
+  margin: 0 0 20px;
+  border-left-style: solid;
+  border-left-width: 10px;
+  border-color: #D6DBDF !important;
+  background: none repeat scroll 0 0 rgba(102,128,153,.05) !important;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px
+}
+
+blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999
+}
+
+blockquote small:before {
+  content: '\2014 \00A0'
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: ""
+}
+
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px
+}
+
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+code {
+  border: 0;
+  background-color: #D6DBDF;
+  border-radius: 4px;
+  color: #2C3E50 !important;
+  font-size: 14px;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px
+}
+
+
+pre.prettyprint {
+  margin-bottom: 20px
+}
+
+pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0
+}
+
+form {
+  margin: 0 0 20px
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5
+}
+
+legend small {
+  font-size: 15px;
+  color: #999
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+label {
+  /*display: block;*/
+  padding-left: 5px;
+  vertical-align: bottom;
+  margin-bottom: 5px
+}
+
+select,
+textarea,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color],
+.uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px
+}
+
+input,
+textarea,
+.uneditable-input {
+  width: 206px
+}
+
+textarea {
+  height: auto
+}
+
+textarea,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color],
+.uneditable-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+.uneditable-input:focus {
+  border-color: rgba(82, 168, 236, .8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6)
+}
+
+input[type=radio],
+input[type=checkbox] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal
+}
+
+input[type=file],
+input[type=image],
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=radio],
+input[type=checkbox] {
+  width: auto
+}
+
+select,
+input[type=file] {
+  height: 30px;
+  *margin-top: 4px;
+  line-height: 30px
+}
+
+select {
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #ccc
+}
+
+select[multiple],
+select[size] {
+  height: auto
+}
+
+select:focus,
+input[type=file]:focus,
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px
+}
+
+.uneditable-input,
+.uneditable-textarea {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #fcfcfc;
+  border-color: #ccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .025);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .025);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .025)
+}
+
+.uneditable-input {
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.uneditable-textarea {
+  width: auto;
+  height: auto
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999
+}
+
+p {
+  margin: 0 0 10px
+}
+
+small {
+  font-size: 85%
+}
+
+strong {
+  font-weight: 700
+}
+
+em {
+  font-style: italic
+}
+
+cite {
+  font-style: normal
+}
+
+table {
+  max-width: 100%;
+  background: transparent;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+th, td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  /*border-left: 1px solid #ddd;*/
+  /*border-top: 1px;*/
+  border: 1px solid #ddd;
+}
+th {
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+thead:first-child tr:first-child > th:first-child,
+tbody:first-child tr:first-child > td:first-child {
+  border-top-left-radius: 4px;
+}
+
+thead:first-child tr:first-child > th:last-child,
+tbody:first-child tr:first-child > td:last-child {
+  border-top-right-radius: 4px;
+}
+thead:last-child tr:last-child>th:last-child,
+tbody:last-child tr:last-child>td:last-child,
+tfoot:last-child tr:last-child>td:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+thead:last-child tr:last-child>th:first-child,
+tbody:last-child tr:last-child>td:first-child,
+tfoot:last-child tr:last-child>td:first-child {
+  border-bottom-left-radius: 4px;
+}
+tbody > tr:nth-child(2n+1)>td,
+tbody > tr:nth-child(2n+1)>th {
+  background-color: rgba(102,128,153,.05);
+}
+
+/*
+ * Markdown PDF CSS
+ */
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	padding: 10px;
+	overflow-wrap: break-word;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+:not(pre):not(.hljs) > code {
+	color: #A31515;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+
+@media print {
+  * {
+    color: #000!important;
+    text-shadow: none!important;
+    background: transparent!important;
+    box-shadow: none!important
+  }
+  body {
+    background-color: #fff
+  }
+  a,
+  a:visited {
+    text-decoration: underline
+  }
+  a[href]:after {
+    content: " (" attr(href) ")"
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")"
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid
+  }
+  thead {
+    display: table-header-group
+  }
+  tr,
+  img {
+    page-break-inside: avoid
+  }
+  img {
+    max-width: 100%!important
+  }
+  @page {
+    margin: .5cm
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3
+  }
+  h2,
+  h3 {
+    page-break-after: avoid
+  }
+}</style></head><body class="theme-white"><div class="previewer"><h2>Pyinstaller简介</h2>
+<h2>Pyinstaller安装</h2>
+<h2>Pyinstaller常规使用说明</h2>
+<h2>GUI2打包及注意事项</h2>
+<hr>
+<h3>Pyinstaller简介</h3>
+<p>PyInstaller将Python应用程序及其所有依赖项打包到一个文件夹或文件中，打包完的程序就可以在没有安装Python解释器或依赖的机器上运行了。Pyinstaller通过读取你编写的python脚本，分析你的代码去收集每一个需要的模块和库，包括python解释器，并将它们复制下来后与你的python脚本放在单个文件夹或单个可执行文件中．
+PyInstaller支持Python 2.7和Python 3.3-3.6。可以在Windows、Mac OS X和Linux上使用，但是并不是跨平台的，而是说你要是希望打包成.exe文件，需要在Windows系统上运行PyInstaller进行打包工作，打包成mac app，需要在Mac OS上使用。</p>
+<hr>
+<h3>Pyinstaller安装</h3>
+<pre><code>pip install pyinstaller
+</code></pre>
+<p>一般会安装在<code>/use/local/lib/python2.7/dist-packages/Pyinstaller</code></p>
+<hr>
+<h3>Pyinstaller常规使用说明</h3>
+<p><strong>1. 常规使用.</strong><br>
+对于大多数的工程项目，可以用以下方式打包成可执行文件，默认打包方式是生成一个文件夹，文件夹中包含所有依赖项，以及可执行文件。打包成文件夹的好处就是debug的时候可以清楚的看到依赖项有没有包含。另一个好处是更新的时候，只需要更新可执行文件就可以了。当然缺点也很明显，不方便，不易管理。</p>
+<pre><code>pyinstaller myscript.py
+</code></pre>
+<p>如果想打包成一个可执行文件,可以这样</p>
+<pre><code>pyinstaller --onefile myscript.py
+</code></pre>
+<p>打包成一个文件相对于文件夹更容易管理。坏处运行相对比较慢。这个文件中包含了压缩的依赖文件拷贝（.so文件）。</p>
+<p><strong>2. 以打包myscript.py为例，说明整个打包过程.</strong><br>
+myscript.py的内容如下：</p>
+<pre><code>#!/usr/bin/python  
+# -*- coding: utf-8 -*-
+
+print 'Hello world!'
+</code></pre>
+<p>myscript.py位于test目录下，若将其打包成单个文件夹，可在terminal上输入</p>
+<pre><code>pyinstaller myscript.py
+</code></pre>
+<p><img src="./pictures/p1.png" alt="image">
+生成与myscript同名的myscript.spec文件以及两个文件夹build和dist．
+位于dist目录下的myscript文件夹下可以看到可执行文件myscript．
+<img src="./pictures/p2.png" alt="image">
+在终端上输入</p>
+<pre><code>./myscript
+</code></pre>
+<p>即可执行文件．可在终端上看到
+<img src="./pictures/p3.png" alt="image"></p>
+<p>如果想将全部依赖及脚本打包成一个可执行文件，可以用以下参数</p>
+<pre><code>pyinstaller --onefile myscript.py
+</code></pre>
+<p><strong>3. 常见异常处理.</strong><br>
+如果myscript.py的内容如下：</p>
+<pre><code>#!/usr/bin/python  
+# -*- coding: utf-8 -*-
+
+print 'Hello world!'
+print u'你好，世界！'
+</code></pre>
+<p>即使按以上命令生成可执行文件成功，也会出现运行错误，错误如下：
+<img src="./pictures/p4.png" alt="image"></p>
+<p>解决办法，增加三行代码：</p>
+<pre><code>#!/usr/bin/python  
+# -*- coding: utf-8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8') 
+
+print 'Hello world!'
+print u'你好，世界！'
+</code></pre>
+<p>然后重新按以上步骤生成可执行文件，即可运行成功．</p>
+<p><strong>4. spec文件设置.</strong><br>
+注意到，生成的myscript.spec，用于设置可选参数，包含数据文件，输出路径，隐藏导入等等．
+一般生成的文件内容如下：</p>
+<pre><code># -*- mode: python -*-
+
+block_cipher = None
+
+a = Analysis(['myscript.py'],
+             pathex=['/home/runzhu/Desktop/WYJ_Person/work/Planck/tutorial/test'],
+             binaries=[],
+             datas=[],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          exclude_binaries=True,
+          name='myscript',
+          debug=False,
+          strip=False,
+          upx=True,
+          console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               name='myscript')
+</code></pre>
+<p>如果想将myscript.py只生成myscript.spec，可以用以下命令生成spec文件．</p>
+<pre><code>pyi-makespec myscript.py
+</code></pre>
+<p>生成的spec文件已经包含了大多数命令选项．当你从spec文件构建可执行文件时，那些命令选项是不能被改变，即当你用命令行给可选参数时，仍然无法改变spec文件上的可选参数．只能通过修改spec文件的内容去更改可执行文件的一些属性，修改完生成的myscript.spec后，可以用</p>
+<pre><code>pyinstaller myscript.spec
+</code></pre>
+<p>生成可执行文件．</p>
+<p>Pyinstaller做的第一件事情是生成一个spec文件(本例中是myscript.spec文件)，可以用<code>--specpath=</code>选项指定该文件生成的路径．
+spec文件告诉Pyinstaller怎样处理你的脚本．它编码脚本名称以及给予pyinstaller命令的大部分选项。spec文件实质上是可执行的python代码．Pyinstaller通过执行spec文件的内容去构建应用程序．</p>
+<ul>
+<li>
+<p>对于大多数使用Pyinstaller的情况下是不需要修改spec文件，有四种情况需要修改spec文件：<br>
+a. 当应用程序需要绑定数据文件时，例如读取外部文件．<br>
+b. 当您想要包含PyInstaller从其他来源不知道的运行时库（.dll或.so文件）时．<br>
+c. 当需要将Python运行时的选项添加到可执行文件时。<br>
+d. 当需要创建具有合并的公共模块的多路程序包时。</p>
+</li>
+<li>
+<p>spec文件创建了四个类的实例化，这四个类分别是Analysis, PYZ, EXE以及COLLECT．</p>
+</li>
+</ul>
+<p>Analysis类分析所有导入和其他依赖关系．Analysis第一个参数是需要生成可执行文件的python脚本，<code>binaries=[]</code>表示增加脚本所需的二进制文件，例如一些<code>.so</code>或<code>.dll</code>文件．通常Pyinstaller会分析导入的模块然后将<code>.so</code>和<code>.dll</code>库自动的包含，但有时后Pyinstaller不清楚哪个模块是否已导入，这时候你可以用<code>hiddenimports=[]</code>来包含未导入的模块，但即使这样做也未必能寻找到所有的依赖关系．</p>
+<p><code>datas=</code>选项用于增加非二进制文件，例如你的脚本程序需要读取<code>src</code>目录下的<code>config.yml，on.png</code>，可以这样表示<code>datas=[('src/config.yml', '.'), ('src/on.png', '.')]</code>．
+数据文件列表是一个元组列表，每个元组有两个值，两个值均是字符串．其中第一个指明包含的数据文件，第二个指明运行时包含数据文件的文件夹．</p>
+<p>PYZ类用于将a.pure(脚本所需的python模块)的所有依赖存档打包．<br>
+EXE类用于分析脚本和PYZ存档，然后构建可执行文件．<br>
+COLLECT类从所有其他部分创建输出文件夹．</p>
+<hr>
+<h2>GUI2打包及注意事项</h2>
+<ul>
+<li>以将GUI2生成可执行文件为例．
+GUI2包含的文件如下：
+<img src="./pictures/p5.png" alt="image">
+主工程文件是<code>rc.py</code>，读取的外部文件主要有<code>res/on.png, res/off.png，　config/conf.yml, config/robot_cmd.dat</code>，以及编写的模块放在<code>src</code>目录下．</li>
+</ul>
+<p>首先执行命令<code>pyi-makespec rc.py</code>生成<code>rc.spec</code>，然后修改如下：</p>
+<pre><code># -*- mode: python -*-
+
+block_cipher = None
+added_files = [('/home/runzhu/Desktop/WYJ_Person/work/Planck/LuaEditorOptimization/GUI2/data/robot_cmd.dat', './data'),
+('/home/runzhu/Desktop/WYJ_Person/work/Planck/LuaEditorOptimization/GUI2/config/conf.yml', './config'),
+('/home/runzhu/Desktop/WYJ_Person/work/Planck/LuaEditorOptimization/GUI2/res/on.png', './res'),
+('/home/runzhu/Desktop/WYJ_Person/work/Planck/LuaEditorOptimization/GUI2/res/off.png', './res')]
+
+a = Analysis(['rc.py'],
+             pathex=['/home/runzhu/Desktop/WYJ_Person/work/Planck/tutorial/GUI2'],
+             binaries=[],
+             datas=added_files,
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          exclude_binaries=True,
+          name='rc',
+          debug=False,
+          strip=False,
+          upx=True,
+          console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               name='rc')
+</code></pre>
+<p>执行</p>
+<pre><code>pyinstaller rc.spec
+</code></pre>
+<p>即可生成<code>dist/rc/rc</code>可执行文件．运行<code>./rc</code>即可执行打包后的GUI2．
+但是，请注意，由于GUI2用到了wx.lib.pubsub这个模块，如果直接生成可执行文件，则会报出以下错误．</p>
+<pre><code>no module named publisher problem appears.
+</code></pre>
+<p>这是由于pubsub这个模块的机制比较特殊，Pyinstaller无法导入，幸好由于踩这个坑的人太多，Pyinstaller开发小组已经将这个issue修复．
+解决办法：
+进入安装Pyinstaller文件的目录下，例如我的系统上用<code>pip installe pyinstaller</code>命令，Pyinstaller就安装在<code>/use/local/lib/python2.7/dist-packages</code>上，进入该目录下的<code>PyInstaller/hooks/hook-wx.lib.pubsub.py</code>,增加两行如下：
+<img src="./pictures/p7.png" alt="image"></p>
+<p>进入<code>PyInstaller/utils/hooks/__init__.py</code>，作如下修改：
+<img src="./pictures/p8.png" alt="image">
+修改完后，重复以上生成可执行文件的步骤，尽管仍然会提示缺乏信息，如下
+<img src="./pictures/p9.png" alt="image">
+但不影响可执行文件的正常运行，经过在虚拟机上的纯净系统上测试执行，可以运行打包后的可执行文件．</p>
+</div></body></html>
