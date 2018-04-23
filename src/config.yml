@@ -1,0 +1,4 @@
+file_path: !!python/unicode '/home/piserver/log'
+ip: !!python/unicode 'piserver@183.11.238.30'
+password: !!python/unicode 'Pilogserver'
+port: 22
